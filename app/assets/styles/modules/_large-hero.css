@@ -1,0 +1,84 @@
+.large-hero {
+    position: relative;
+
+/* When nesting, use '&' so that selectors are not compiles as type/descendent selectors.  */
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 300;
+        color: $mainBlue;
+        margin: 0;
+        font-size: 1.1rem;  /* relative to root (main HTML element) of page, usually 16 px */
+  
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.8rem;
+    }
+
+  }
+    &__subtitle {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 1.1rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+          }        
+
+    }
+    
+    &__description {
+        color: #fff;
+        font-size: 1.875rem;   /* Designer wants 30 px --> 30/16=1.875 */
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width: 30rem;    /* 480/16 = 30 rem */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Type/descendent selectors like ".large-hero h1" and cascades have been replaced by BEM selectors
+   BEM selectors appear below. Descent selectors often create specificity wars.
+   
+   BEM = Block/Element/Modifier
+        Block is a large independent section of HTML.
+        Element modifiers are not used outside their block.
+        Modifiers change default states of objects.
+   In BEM, each HTML elements is given a class.
+
+.large-hero h1 {
+    font-weight: 300;
+} 
+*/
+
+/* to be nested
+
+.large-hero__title {
+    font-weight: 300;
+    color: #2f5572;
+    font-size: 4.8rem;
+}
+
+.large-hero__subtitle {
+    font-weight: 300;
+    color: #2f5572;
+    font-size: 2.9rem;
+}
+*/
