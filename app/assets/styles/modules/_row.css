@@ -1,3 +1,5 @@
+/* see resource download file for section 12.41 for CSS Grid column coding alternative */
+
 .row {
 
   @mixin clearfix;

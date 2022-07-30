@@ -1,3 +1,6 @@
+/* see resource download file for section 12.40 for CSS Grid coding alternative */
+/* additional code added to HTML picture element (line 36) */
+
 .large-hero {
   border-bottom: 10px solid $mainBlue;
   position: relative;
@@ -9,6 +12,7 @@
 /* When nesting, use '&' so that selectors are not compiles as type/descendent selectors.  */
 
     &__text-content {
+        padding-top: 60px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
