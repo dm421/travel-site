@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,13 +20,21 @@
   },
   "homepage": "https://github.com/LearnWebCode/travel-site-files#readme",
   "dependencies": {
+    "css-minimizer-webpack-plugin": "^4.0.0",
     "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
     "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
+    "fs-extra": "^10.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
     "postcss-hexrgba": "^2.1.0",
     "postcss-import": "^14.1.0",
     "postcss-loader": "^7.0.1",
