@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/LearnWebCode/travel-site-files#readme",
   "dependencies": {
+    "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
@@ -28,7 +29,7 @@
     "postcss-hexrgba": "^2.1.0",
     "postcss-import": "^14.1.0",
     "postcss-loader": "^7.0.1",
-    "postcss-mixins": "^9.0.3",
+    "postcss-mixins": "^7.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-simple-vars": "^6.0.3",
     "style-loader": "^3.3.1",
